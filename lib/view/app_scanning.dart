@@ -63,7 +63,7 @@ class _TabScanningState extends State<TabScanning> {
         flutterBeacon.ranging(regions).listen((RangingResult result) {
       print(result);
       if (mounted) {
-        urlRequest(context);
+        // httpRequest(context); // For http test after founding
         setState(() {
           _regionBeacons[result.region] = result.beacons;
           _beacons.clear();

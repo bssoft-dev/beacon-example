@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-Future urlRequest(context) async {
+Future httpRequest(context) async {
   String attendanceUrl = "http://test-api.bs-soft.co.kr/asdfs/adfds";
 
   final response = await http.get(Uri.parse(attendanceUrl));
